@@ -121,3 +121,9 @@ INSERT INTO gliders (glider_name, glider_id, rarity, cost, glider_set_name, bund
 ('Shugoki', 'Glider_Headset', 'ICON SERIES', 1200, 'SypherPK', 'SypherPK Bundle'),
 ('Champion Sail Shark', 'Glider_Shark_FNCS', 'RARE', 800, 'FNCS', 'FNCS Invitational 2022 Bundle'),
 ('Sweetner Sailshards', 'Glider_ID_304_BuffetFemale_AOF61', 'ICON SERIES', 1200, 'Ariana Grande', 'Ariana Grande Bundle');
+
+INSERT INTO emotes (emote_name, emote_id, rarity, cost, bundle_name, skin_name) VALUES
+('Masked', 'EID_SpeedDial_Mask', 'ICON SERIES', 1800, 'The Weeknd Bundle'),
+('Popular Vibe', 'EID_SpeedDial', 'ICON SERIES', 500, 'The Weeknd Bundle'),
+('I''m Diamond', 'EID_KeeperDreamChorus', 'ICON SERIES', 800, 'BTS Dynamite Pack'),
+('I''ts Dynamite!', 'EID_KeeperDreamHook', 'ICON SERIES', 800, 'BTS Dynamite Pack')
