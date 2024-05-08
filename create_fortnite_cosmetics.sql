@@ -44,7 +44,10 @@ INSERT INTO bundles (bundle_name, bundle_id, bundle_cost, rarity, item_amount) V
 ('The Weeknd Bundle', 'SpeedDial_Bundle', 3500, 'ICON SERIES', 8),
 ('Falcon Clan Bundle', 'Architect_BandageNinja_Bundle', 2800, 'EPIC', 7),
 ('BTS Dynamite Pack', 'KeeperDreamBundle', 800, 'ICON SERIES', 2),
-('John Wick', 'AssassinSuit_Bundle', 2400, 'LEGENDARY', 6);
+('John Wick', 'AssassinSuit_Bundle', 2400, 'LEGENDARY', 6),
+('SypherPK Bundle', 'Headset_Bundle', 2800, 'ICON SERIES', 6),
+('FNCS Invitational 2022 Bundle', 'FNCS22_Bundle', 2300, 'UNCOMMON', 6),
+('Ariana Grande Bundle', 'Buffet_Bundle', 2800, 'ICON SERIES', 5);
 
 INSERT INTO skins (skin_name, skin_id, rarity, cost, skin_set_name, bundle_name) VALUES
 ('Zuko', 'Character_TikiTorch', 'EPIC', 2000, 'Avatar', 'Zuko Pack'),
@@ -52,7 +55,7 @@ INSERT INTO skins (skin_name, skin_id, rarity, cost, skin_set_name, bundle_name)
 ('Kenji', 'CID_361_Athena_Commando_M_BandageNinja', 'EPIC', 1500, 'Falcon Clan', 'Falcon Clan Bundle'),
 ('Kuno', 'CID_362_Athena_Commando_F_BandageNinja', 'EPIC', 1500, 'Falcon Clan', 'Falcon Clan Bundle'),
 ('John Wick', 'CID_416_Athena_Commando_M_AssassinSuit', 'LEGENDARY', 2000, 'John Wick', 'John Wick'),
-('Harpy Haze', 'Character_FabulousWind', 'RARE', NULL, 'ScreamingSun', NULL), -- Example of a cosmetic paid with real currency
+('Harpy Haze', 'Character_FabulousWind', 'RARE', NULL, 'ScreamingSun', NULL),
 ('Lavendra', 'Character_RetroPhotographer', 'EPIC', 1200, 'Flawless Flora', NULL);
 
 INSERT INTO gliders (glider_name, glider_id, rarity, cost, glider_set_name, bundle_name) VALUES
