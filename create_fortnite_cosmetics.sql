@@ -38,63 +38,55 @@ CREATE TABLE gliders(
 );
 
 CREATE TABLE emotes(
-	emote_name				VARCHAR(255)		PRIMARY KEY,
-    emote_id				VARCHAR(255)		NOT NULL				UNIQUE,
-    rarity					VARCHAR(15)			NOT NULL,
-    cost						INT,
-    bundle_name			VARCHAR(255)		DEFAULT NULL,
-    skin_name				VARCHAR(255)		DEFAULT NULL,
-    sync_status     BOOLEAN					NOT NULL				DEFAULT 0,
-
+	emote_name		VARCHAR(255)	PRIMARY KEY,
+    emote_id		VARCHAR(255)	NOT NULL		UNIQUE,
+    rarity			VARCHAR(15)		NOT NULL,
+    cost			INT,
+    bundle_name		VARCHAR(255)	DEFAULT NULL,
+    skin_name		VARCHAR(255)	DEFAULT NULL,
+    sync_status     BOOLEAN			NOT NULL		DEFAULT 0,
     CONSTRAINT emotes_fk_bundles
-    FOREIGN KEY (bundle_name)
-    REFERENCES bundles (bundle_name),
-
+        FOREIGN KEY (bundle_name)
+        REFERENCES bundles (bundle_name),
     CONSTRAINT emotes_fk_skins
-    FOREIGN KEY (skin_name)
-    REFERENCES skins (skin_name)
+        FOREIGN KEY (skin_name)
+        REFERENCES skins (skin_name)
 );
 
 CREATE TABLE pickaxes(
-	pickaxe_name					VARCHAR(255)		PRIMARY KEY,
-    pickaxe_id					VARCHAR(255)		NOT NULL				UNIQUE,
-    rarity							VARCHAR(15)			NOT NULL,
-    cost								INT,
-    pickaxe_set_name		VARCHAR(255)		DEFAULT NULL,
-    bundle_name					VARCHAR(255)		DEFAULT NULL,
-
+	pickaxe_name		VARCHAR(255)	PRIMARY KEY,
+    pickaxe_id			VARCHAR(255)	NOT NULL	    UNIQUE,
+    rarity				VARCHAR(15)		NOT NULL,
+    cost				INT,
+    pickaxe_set_name	VARCHAR(255)	DEFAULT NULL,
+    bundle_name			VARCHAR(255)	DEFAULT NULL,
     CONSTRAINT pickaxes_fk_bundles
-    FOREIGN KEY (bundle_name)
-    REFERENCES bundles (bundle_name)
+        FOREIGN KEY (bundle_name)
+        REFERENCES bundles (bundle_name)
 );
 
 CREATE TABLE loadouts(
-	player_name					VARCHAR(255)		PRIMARY KEY,
-    skin_name					VARCHAR(255)		PRIMARY KEY,
-	  emote_name				VARCHAR(255)		PRIMARY KEY,
-	  pickaxe_name			VARCHAR(255)		PRIMARY KEY,
-		glider_name				VARCHAR(255)		PRIMARY KEY,
-		music_name				VARCHAR(255)		PRIMARY KEY,
-
+	player_name		VARCHAR(255)	PRIMARY KEY,
+    skin_name		VARCHAR(255)	PRIMARY KEY,
+	emote_name		VARCHAR(255)	PRIMARY KEY,
+	pickaxe_name	VARCHAR(255)	PRIMARY KEY,
+	glider_name		VARCHAR(255)	PRIMARY KEY,
+	music_name		VARCHAR(255)	PRIMARY KEY,
     CONSTRAINT loadouts_fk_skins
-    FOREIGN KEY (skin_name)
-    REFERENCES skins (skin_name),
-
+        FOREIGN KEY (skin_name)
+        REFERENCES skins (skin_name),
     CONSTRAINT loadouts_fk_emotes
-    FOREIGN KEY (emote_name)
-    REFERENCES emotes (emote_name),
-
+        FOREIGN KEY (emote_name)
+        REFERENCES emotes (emote_name),
     CONSTRAINT loadouts_fk_pickaxes
-    FOREIGN KEY (pickaxe_name)
-    REFERENCES pickaxes (pickaxe_name),
-
+        FOREIGN KEY (pickaxe_name)
+        REFERENCES pickaxes (pickaxe_name),
     CONSTRAINT loadouts_fk_gliders
-    FOREIGN KEY (glider_name)
-    REFERENCES gliders (glider_name),
-
+        FOREIGN KEY (glider_name)
+        REFERENCES gliders (glider_name),
     CONSTRAINT loadouts_fk_music
-    FOREIGN KEY (music_name)
-    REFERENCES music (music_name)
+        FOREIGN KEY (music_name)
+        REFERENCES music (music_name)
 );
 
 /* DATA */
