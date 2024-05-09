@@ -122,3 +122,11 @@ INSERT INTO emotes (emote_name, emote_id, rarity, cost, bundle_name, skin_name) 
 ('Popular Vibe', 'EID_SpeedDial', 'ICON SERIES', 500, 'The Weeknd Bundle'),
 ('I''m Diamond', 'EID_KeeperDreamChorus', 'ICON SERIES', 800, 'BTS Dynamite Pack'),
 ('I''ts Dynamite!', 'EID_KeeperDreamHook', 'ICON SERIES', 800, 'BTS Dynamite Pack')
+
+INSERT INTO pickaxes (pickaxe_name, pickaxe_id, rarity, cost, pickaxe_set_name, bundle_name) VALUES
+('Zuko''s Broadswords', 'Pickaxe_TikiTorch', 'RARE', 2000, 'Avatar', 'Zuko Pack'),
+('Axe-O', 'Pickaxe_SpeedDial', 'ICON SERIES', 500, 'The Weeknd', 'The Weeknd Bundle'),
+('Quickstrike', 'Pickaxe_ID_172_BandageNinja', 'UNCOMMON', 500, 'Falcon Clan', 'Falcon Clan Bundle'),
+('Talons', 'Pickaxe_ID_219_BandageNinja1H', 'RARE', 800, 'Falcon Clan', 'Falcon Clan Bundle'),
+('Simple Sledge', 'Pickaxe_ID_213_AssassinSuitSledgehammer', 'UNCOMMON', 500, 'John Wick', 'John Wick'),
+('Wick''s Katana', 'Pickaxe_TracePaper', 'UNCOMMON', 500, 'John Wick', 'John Wick'),
