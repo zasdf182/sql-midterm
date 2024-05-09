@@ -67,11 +67,11 @@ CREATE TABLE pickaxes(
 
 CREATE TABLE loadouts(
 	player_name		VARCHAR(255)	PRIMARY KEY,
-    skin_name		VARCHAR(255)	PRIMARY KEY,
-	emote_name		VARCHAR(255)	PRIMARY KEY,
-	pickaxe_name	VARCHAR(255)	PRIMARY KEY,
-	glider_name		VARCHAR(255)	PRIMARY KEY,
-	music_name		VARCHAR(255)	PRIMARY KEY,
+    skin_name		VARCHAR(255)	DEFAULT NULL,
+	emote_name		VARCHAR(255)	DEFAULT NULL,
+	pickaxe_name	VARCHAR(255)	DEFAULT NULL,
+	glider_name		VARCHAR(255)	DEFAULT NULL,
+	music_name		VARCHAR(255)	DEFAULT NULL,
     CONSTRAINT loadouts_fk_skins
         FOREIGN KEY (skin_name)
         REFERENCES skins (skin_name),
@@ -117,11 +117,11 @@ INSERT INTO gliders (glider_name, glider_id, rarity, cost, glider_set_name, bund
 ('Champion Sail Shark', 'Glider_Shark_FNCS', 'RARE', 800, 'FNCS', 'FNCS Invitational 2022 Bundle'),
 ('Sweetner Sailshards', 'Glider_ID_304_BuffetFemale_AOF61', 'ICON SERIES', 1200, 'Ariana Grande', 'Ariana Grande Bundle');
 
-INSERT INTO emotes (emote_name, emote_id, rarity, cost, bundle_name, skin_name) VALUES
+INSERT INTO emotes (emote_name, emote_id, rarity, cost, bundle_name) VALUES
 ('Masked', 'EID_SpeedDial_Mask', 'ICON SERIES', 1800, 'The Weeknd Bundle'),
 ('Popular Vibe', 'EID_SpeedDial', 'ICON SERIES', 500, 'The Weeknd Bundle'),
 ('I''m Diamond', 'EID_KeeperDreamChorus', 'ICON SERIES', 800, 'BTS Dynamite Pack'),
-('I''ts Dynamite!', 'EID_KeeperDreamHook', 'ICON SERIES', 800, 'BTS Dynamite Pack')
+('I''ts Dynamite!', 'EID_KeeperDreamHook', 'ICON SERIES', 800, 'BTS Dynamite Pack');
 
 INSERT INTO pickaxes (pickaxe_name, pickaxe_id, rarity, cost, pickaxe_set_name, bundle_name) VALUES
 ('Zuko''s Broadswords', 'Pickaxe_TikiTorch', 'RARE', 2000, 'Avatar', 'Zuko Pack'),
@@ -129,4 +129,4 @@ INSERT INTO pickaxes (pickaxe_name, pickaxe_id, rarity, cost, pickaxe_set_name, 
 ('Quickstrike', 'Pickaxe_ID_172_BandageNinja', 'UNCOMMON', 500, 'Falcon Clan', 'Falcon Clan Bundle'),
 ('Talons', 'Pickaxe_ID_219_BandageNinja1H', 'RARE', 800, 'Falcon Clan', 'Falcon Clan Bundle'),
 ('Simple Sledge', 'Pickaxe_ID_213_AssassinSuitSledgehammer', 'UNCOMMON', 500, 'John Wick', 'John Wick'),
-('Wick''s Katana', 'Pickaxe_TracePaper', 'UNCOMMON', 500, 'John Wick', 'John Wick'),
+('Wick''s Katana', 'Pickaxe_TracePaper', 'UNCOMMON', 500, 'John Wick', 'John Wick');
