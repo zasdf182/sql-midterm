@@ -65,6 +65,14 @@ CREATE TABLE pickaxes(
         REFERENCES bundles (bundle_name)
 );
 
+CREATE TABLE music(
+		music_name 	VARCHAR(255) 	PRIMARY KEY,
+	music_id 		VARCHAR(255)	NOT NULL 	UNIQUE,
+	rarity 			ENUM('Common', 'Uncommon', 'Rare', 'Epic', 'Legendary', 'Dark Series', 'Frozen Series', 'Lava Series','Shadow Series','Slurp Series','Icon Series','Star Wars Series','DC Series','Marvel Series','Gaming Legends Series','Lamborghini','McLaren') DEFAULT NULL,
+	set_name 		VARCHAR(255) 	DEFAULT NULL,
+	song_length 	SMALLINT 		NOT NULL
+);
+
 CREATE TABLE loadouts(
 	player_name		VARCHAR(255)	PRIMARY KEY,
     skin_name		VARCHAR(255)	DEFAULT NULL,
@@ -130,3 +138,13 @@ INSERT INTO pickaxes (pickaxe_name, pickaxe_id, rarity, cost, pickaxe_set_name, 
 ('Talons', 'Pickaxe_ID_219_BandageNinja1H', 'RARE', 800, 'Falcon Clan', 'Falcon Clan Bundle'),
 ('Simple Sledge', 'Pickaxe_ID_213_AssassinSuitSledgehammer', 'UNCOMMON', 500, 'John Wick', 'John Wick'),
 ('Wick''s Katana', 'Pickaxe_TracePaper', 'UNCOMMON', 500, 'John Wick', 'John Wick');
+
+INSERT INTO music (music_name,music_id,rarity,set_name,song_length) VALUES
+('Coral Chorus','MusicPack_008_Coral',3,'Fish Food',149),
+('Loot In The Mountains','MusicPack_117_WinterFest2021',3,'Winterfest ''21',183),
+('Somebody This Fly','MusicPack_122_Sleek_3ST6M',11,'Silk Sonic',219),
+('Streets Igniite','MusicPack_200_JamTrack',3,'TMNT',173),
+('Caped Crusader','MusicPack_030_BlackMonday_X91ZH',13, 'Gotham City',150),
+('Silk & Cologne (EI8HT VERSION)','MusicPack_179_FearlessFlight',14,'Across the Spider-Verse',148),
+('Breathing Underwater','MusicPack_061_RLxFN',15,'Rocket League',200),
+('Flip Reset','MusicPack_073_RL2PromoTrack',3,'Rocket League',184)
