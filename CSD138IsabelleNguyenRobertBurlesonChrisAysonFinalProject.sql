@@ -272,12 +272,12 @@ INSERT INTO loadouts (loadout_id, player_name, skin_name, emote_name, pickaxe_na
 --  and we've created an index for every WHERE clause)
 -- -----------------------------------------------------------------------------
 
-CREATE INDEX bundle_name ON skins (bundle_name);
-CREATE INDEX skin_name ON skins (skin_name);
-CREATE INDEX skin_name ON loadouts (skin_name);
-CREATE INDEX player_name ON loadouts (player_name);
-CREATE INDEX loadout_id ON loadouts (loadout_id);
-CREATE INDEX item_amount ON bundles (item_amount);
+CREATE INDEX idx_skins_bundlename ON skins (bundle_name);
+CREATE INDEX idx_skins_skinname ON skins (skin_name);
+CREATE INDEX idx_loadouts_skinname ON loadouts (skin_name);
+CREATE INDEX idx_loadouts_playername ON loadouts (player_name);
+CREATE INDEX idx_loadouts_loadoutid ON loadouts (loadout_id);
+CREATE INDEX idx_bundles_itemamount ON bundles (item_amount);
 
 
 
