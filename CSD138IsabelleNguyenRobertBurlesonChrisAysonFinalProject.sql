@@ -214,7 +214,8 @@ INSERT INTO emotes (emote_name, emote_id, rarity, cost, bundle_name) VALUES
 ('Masked', 'EID_SpeedDial_Mask', 11, 1800, 'The Weeknd Bundle'),
 ('Popular Vibe', 'EID_SpeedDial', 11, 500, 'The Weeknd Bundle'),
 ('I''m Diamond', 'EID_KeeperDreamChorus', 11, 800, 'BTS Dynamite Pack'),
-('I''ts Dynamite!', 'EID_KeeperDreamHook', 11, 800, 'BTS Dynamite Pack');
+('I''ts Dynamite!', 'EID_KeeperDreamHook', 11, 800, 'BTS Dynamite Pack'),
+('Lunar Party', 'EID_Sunlit', 11, NULL, NULL);
 
 INSERT INTO pickaxes (pickaxe_name, pickaxe_id, rarity, cost, pickaxe_set_name, bundle_name) VALUES
 ('Zuko''s Broadswords', 'Pickaxe_TikiTorch', 3, 2000, 'Avatar', 'Zuko Pack'),
